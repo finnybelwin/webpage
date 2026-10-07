@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Institute of Technology - College Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0055a4;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #e0f2fe;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h1 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0055a4;
+            padding-bottom: 5px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0055a4;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Global Institute of Technology</h1>
+        <p>Excellence in Education and Innovation</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#departments">Departments</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Welcome Banner -->
+    <div class="banner">
+        <h1>Welcome to Our Campus</h1>
+        <p>Shaping the leaders of tomorrow with state-of-the-art facilities and experienced faculty.</p>
+    </div>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our College</h2>
+            <p>Global Institute of Technology was established in 2005. We offer undergraduate and postgraduate programs in engineering, science, and management. Our mission is to foster a research-driven environment and build strong industry connections.</p>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments">
+            <h2>Departments</h2>
+            <ul>
+                <li>Computer Science and Engineering (CSE)</li>
+                <li>Electronics and Communication Engineering (ECE)</li>
+                <li>Mechanical Engineering (ME)</li>
+                <li>Master of Business Administration (MBA)</li>
+            </ul>
+        </section>
+
+        <!-- Courses Table -->
+        <section id="courses">
+            <h2>Offered Courses</h2>
+            <table>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Duration</th>
+                    <th>Intake</th>
+                </tr>
+                <tr>
+                    <td>B.Tech-CSE</td>
+                    <td>Computer Science & Engineering</td>
+                    <td>4 Years</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>B.Tech-ECE</td>
+                    <td>Electronics & Communication</td>
+                    <td>4 Years</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>MBA</td>
+                    <td>Master of Business Administration</td>
+                    <td>2 Years</td>
+                    <td>60</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Global Institute of Technology. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
